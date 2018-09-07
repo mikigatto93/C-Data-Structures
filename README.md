@@ -1,3 +1,3 @@
-# DataStructures
-A basic set of simple data structures in C 
+# C Data Structures
+A basic set of data structures in C 
 
