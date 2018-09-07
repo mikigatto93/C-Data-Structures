@@ -11,10 +11,21 @@ int main(void)
     int i = 0;
     for (i = 0; i < 8; i++)
     {
-        ArrayList_push(&list, &(data[i]));
+        ArrayList_append(&list, &(data[i]));
         printf("array[%d] = %d\n", i, *(int*)ArrayList_get(&list, i));
     }
 
+    printf("\n\n----------\n\n");
+
+    ArrayList_remove(&list, 2, 0);
+
+    for (i = 0; i < list.length; i++)
+    {
+        //ArrayList_append(&list, &(data[i]));
+        printf("array[%d] = %d\n", i, *(int*)ArrayList_get(&list, i));
+    }
+
+    //ArrayList_get(&list, 100);
     ArrayList_free(&list, 0);
     return 0;
 }

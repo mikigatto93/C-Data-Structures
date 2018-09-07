@@ -15,8 +15,8 @@ void ArrayList_init(ArrayList *a, size_t capacity);
 void ArrayList_insert(ArrayList *a, int index, void* elem);
 void *ArrayList_get(ArrayList *a, int index);
 void ArrayList_shrink_to_fit(ArrayList *a);
-void ArrayList_erase(ArrayList *a, int index, _Bool isAllocated);
-void ArrayList_push(ArrayList *a, void* elem);
+void ArrayList_remove(ArrayList *a, int index);
+void ArrayList_append(ArrayList *a, void* elem);
 
 void ArrayList_free(ArrayList *a, _Bool isAllocated);
 
